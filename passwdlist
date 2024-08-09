@@ -1,0 +1,19 @@
+class WordlistOlustur:
+    def __init__(self, harf1, harf2, harf3, harf4, harf5):
+        # Kullanıcıdan harfleri almak için input fonksiyonunu kullan
+        self.harf1 = input(f"{harf1}: ")
+        self.harf2 = input(f"{harf2}: ")
+        self.harf3 = input(f"{harf3}: ")
+        self.harf4 = input(f"{harf4}: ")
+        self.harf5 = input(f"{harf5}: ")
+
+        # Harfleri listeye ekle
+        self.wordlist = [self.harf1, self.harf2, self.harf3, self.harf4, self.harf5]
+
+    def listeyi_goster(self):
+        print("Oluşturduğunuz kelime listesi:", self.wordlist)
+
+
+# Sınıfı kullanarak kelime listesi oluşturma
+olusturucu = WordlistOlustur("1. Harfi girin", "2. Harfi girin", "3. Harfi girin", "4. Harfi girin", "5. Harfi girin")
+olusturucu.listeyi_goster()
